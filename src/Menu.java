@@ -1,3 +1,4 @@
+import com.airtribe.learntrack.HelloWorld;
 import com.airtribe.learntrack.student.exception.EntityNotFoundException;
 import com.airtribe.learntrack.student.service.StudentService;
 import com.airtribe.learntrack.student.service.impl.StudentServiceImpl;
@@ -11,6 +12,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws EntityNotFoundException {
 
+        HelloWorld hw = new HelloWorld();
+        hw.print();
         Scanner sc = new Scanner(System.in);
         StudentService service = new StudentServiceImpl();
 
