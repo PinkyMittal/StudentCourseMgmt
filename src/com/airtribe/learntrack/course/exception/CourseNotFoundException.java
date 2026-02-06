@@ -1,4 +1,9 @@
 package com.airtribe.learntrack.course.exception;
 
-public class CourseNotFoundException {
-}
+public class CourseNotFoundException extends Exception{
+
+        public CourseNotFoundException(String message) {
+            super(message);
+        }
+    }
+

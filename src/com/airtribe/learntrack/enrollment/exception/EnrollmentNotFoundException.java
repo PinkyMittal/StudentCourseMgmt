@@ -1,4 +1,6 @@
 package com.airtribe.learntrack.enrollment.exception;
 
-public class EnrollmentNotFoundException {
+public class EnrollmentNotFoundException extends Throwable {
+    public EnrollmentNotFoundException(String s) {
+    }
 }

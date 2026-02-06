@@ -104,15 +104,20 @@ public class StudentServiceImpl implements StudentService {
         int id = scan.nextInt();
         boolean found = false;
         scan.nextLine();
-        for(Student s : students){
-            if(s.getId() == id){
-                System.out.println("Student found successfully "+s.toString());
-                found=true;
-                break;
-            }
-        }
+        found = isFound(id, found);
         if(!found){
             throw new EntityNotFoundException("Student id does not exist");
         }
+    }
+
+    public boolean isFound(int id, boolean found) {
+        for(Student s : students){
+            if(s.getId() == id){
+                System.out.println("Student found successfully "+s.toString());
+                found =true;
+                break;
+            }
+        }
+        return found;
     }
 }

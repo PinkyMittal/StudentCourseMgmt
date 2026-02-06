@@ -11,4 +11,5 @@ public interface StudentService {
     public void listStudent();
     public void searchStudent() throws EntityNotFoundException;
 
+    boolean isFound(int studentId, boolean b);
 }
