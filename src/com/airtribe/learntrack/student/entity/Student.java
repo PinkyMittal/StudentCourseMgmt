@@ -2,7 +2,7 @@ package com.airtribe.learntrack.student.entity;
 
 
 /* Student class is inherited from Person ,
- to show inheritance */
+ to show inheritance OOPS concept */
 
 public class Student extends Person{
 
